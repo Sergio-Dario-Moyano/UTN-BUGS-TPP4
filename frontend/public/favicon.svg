@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <rect width="64" height="64" rx="14" fill="#0b0f14" />
+  <rect x="1" y="1" width="62" height="62" rx="13" fill="none" stroke="#ff0d46" stroke-opacity="0.35" stroke-width="2" />
+
+  <!-- Antenas -->
+  <path d="M26 22 L20 14" stroke="#ff0d46" stroke-width="3" stroke-linecap="round" />
+  <circle cx="19" cy="13" r="2" fill="#ff0d46" />
+  <path d="M38 22 L44 14" stroke="#ff0d46" stroke-width="3" stroke-linecap="round" />
+  <circle cx="45" cy="13" r="2" fill="#ff0d46" />
+
+  <!-- Patas -->
+  <path d="M16 32 L8 30" stroke="#ff0d46" stroke-width="3" stroke-linecap="round" />
+  <path d="M48 32 L56 30" stroke="#ff0d46" stroke-width="3" stroke-linecap="round" />
+  <path d="M16 42 L8 45" stroke="#ff0d46" stroke-width="3" stroke-linecap="round" />
+  <path d="M48 42 L56 45" stroke="#ff0d46" stroke-width="3" stroke-linecap="round" />
+
+  <!-- Cuerpo -->
+  <ellipse cx="32" cy="38" rx="14" ry="16" fill="#151922" stroke="#ff0d46" stroke-width="3" />
+  <line x1="32" y1="23" x2="32" y2="53" stroke="#ff0d46" stroke-width="2" stroke-opacity="0.6" />
+
+  <!-- Cabeza -->
+  <circle cx="32" cy="24" r="8" fill="#ff0d46" />
+
+  <!-- Ojos -->
+  <circle cx="29" cy="23" r="1.5" fill="#0b0f14" />
+  <circle cx="35" cy="23" r="1.5" fill="#0b0f14" />
+</svg>

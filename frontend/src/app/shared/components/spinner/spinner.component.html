@@ -1,0 +1,24 @@
+<div class="spinner-overlay">
+  <div class="spinner-container">
+    <div class="spinner-loader" aria-hidden="true">
+      <!-- Anillo exterior de carga circular SVG en verde neón -->
+      <svg class="spinner-svg" viewBox="0 0 120 120">
+        <circle class="spinner-track" cx="60" cy="60" r="52" />
+        <circle class="spinner-progress-circle" cx="60" cy="60" r="52" />
+      </svg>
+
+      <!-- Insignia central con el bicho cibernético verde -->
+      <div class="spinner-bug-badge">
+        <svg viewBox="0 0 24 24" class="spinner-bug-icon" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M12 3v4m0 10v4M5.5 8l3 2m7 0l3-2M5.5 16l3-2m7 0l3 2" stroke-linecap="round"/>
+          <path d="M9 7h6a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2z" stroke-linejoin="round"/>
+          <path d="M12 7v10M9 12l3 3 3-3" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+    </div>
+    @if (mensaje()) {
+      <span class="spinner-message">{{ mensaje() }}</span>
+    }
+  </div>
+</div>
+
