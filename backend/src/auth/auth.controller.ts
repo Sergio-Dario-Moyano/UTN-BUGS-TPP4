@@ -36,12 +36,13 @@ export class AuthController {
    * Cómo lo hace: Ejecuta response.cookie con httpOnly: true, sameSite: 'none' y secure: true.
    */
   private setAuthCookie(response: Response, token: string): void {
+    // Misma duración que el JWT: variable SESION_MINUTOS (por defecto 15)
+    const minutos = Number(this.configService.get('SESION_MINUTOS') ?? 15);
     response.cookie('autorizacion', token, {
       httpOnly: true,
       sameSite: 'none',
       secure: true,
-      // expires: new Date(Date.now() + (1000  * 15)),
-      expires: new Date(Date.now() + 1000 * 60 * 15), //Configuracion de los 15 minutos de expiracion del token.
+      expires: new Date(Date.now() + 1000 * 60 * minutos),
     });
   }
 

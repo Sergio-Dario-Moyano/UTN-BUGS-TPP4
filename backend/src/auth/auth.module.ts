@@ -21,7 +21,8 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
       inject: [ConfigService],
       useFactory: (configService: ConfigService) => ({
         secret: configService.get<string>('JWT_SECRET'),
-        signOptions: { expiresIn: '15m' },
+        // Duración de la sesión en minutos: variable SESION_MINUTOS (por defecto 15)
+        signOptions: { expiresIn: `${Number(configService.get('SESION_MINUTOS') ?? 15)}m` },
       }),
     }),
   ],
